@@ -8,6 +8,10 @@ class HomeViewModel : ViewModel() {
     private val _navigateToSearch = MutableLiveData<Boolean>()
     val navigateToSearch: LiveData<Boolean>
         get() = _navigateToSearch
+    
+    init {
+        onNavigatedToSearch()
+    }
 
     fun onFabClicked() {
         _navigateToSearch.value = true
