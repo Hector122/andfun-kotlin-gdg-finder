@@ -15,7 +15,10 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize">
+                android:background="?attr/colorPrimaryDark"
+                android:tint="?colorOnPrimary"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
 
                 <ImageView
                     android:id="@+id/hero_image"
